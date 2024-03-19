@@ -1,1 +1,1 @@
-# J-zyk-Opisu-Sprz-tu
+#JOS
