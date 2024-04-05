@@ -4,7 +4,7 @@ module tb(
     
     logic clk, rst, zz, xx;
     
-    fsm mealy (.clk(clk), .rst(rst), .inpx(xx), .outz(zz));
+    fsm mealy (.clk(clk), .rst(rst), .X(xx), .Z(zz));
     
     initial begin
         clk = 1'b0;
