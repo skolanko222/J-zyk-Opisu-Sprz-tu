@@ -1,0 +1,633 @@
+/*
+
+AMD Vivado v2023.1 (64-bit) [Major: 2023, Minor: 1]
+SW Build: 3865809 on Sun May  7 15:04:56 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+IP Build: 3864474 on Sun May  7 20:36:21 MDT 2023
+
+Process ID (PID): 45628
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Apr 05 14:01:42 CEST 2024
+Time zone: 	Central European Standard Time (Europe/Warsaw)
+
+OS: Ubuntu
+OS Version: 5.15.0-101-generic
+OS Architecture: amd64
+Available processors (cores): 6
+
+Display: 0
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+OS font scaling: 100%
+
+Java version: 	17.0.3 64-bit
+JavaFX version: 17.0.1
+Java home: 	/local/home/cadmgr/xilinx/Vivado/2023.1/tps/lnx64/jre17.0.3_7
+Java executable: 	/local/home/cadmgr/xilinx/Vivado/2023.1/tps/lnx64/jre17.0.3_7/bin/java
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Djdk.gtk.version=2, -Dsun.java2d.uiScale.enabled=false, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, -XX:+UseStringDeduplication, -XX:MaxGCPauseMillis=200, -XX:+ParallelRefProcEnabled, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/java.awt.event=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.base/java.nio=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-exports=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-exports=java.desktop/sun.swing=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.table=ALL-UNNAMED, --add-exports=java.desktop/sun.swing.plaf.synth=ALL-UNNAMED, --add-exports=java.desktop/sun.awt.shell=ALL-UNNAMED, --add-exports=java.base/sun.security.action=ALL-UNNAMED, --add-exports=java.desktop/sun.font=ALL-UNNAMED, --add-opens=java.desktop/sun.awt.X11=ALL-UNNAMED, -XX:NewSize=80m, -XX:MaxNewSize=80m, -Xms512m, -Xmx4072m, -Xss10m, -Xrs]
+Java initial memory (-Xms): 	512 MB
+Java maximum memory (-Xmx):	 3 GB
+
+User name: 	1kolanko
+User home directory: /home/stud2021/1kolanko
+User working directory: /home/stud2021/1kolanko/JOS
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /local/home/cadmgr/xilinx/Vivado
+HDI_APPROOT: /local/home/cadmgr/xilinx/Vivado/2023.1
+RDI_DATADIR: /local/home/cadmgr/xilinx/Vivado/2023.1/data
+RDI_BINDIR: /local/home/cadmgr/xilinx/Vivado/2023.1/bin
+
+Vivado preferences file: /home/stud2021/1kolanko/.Xilinx/Vivado/2023.1/vivado.xml
+Vivado preferences directory: /home/stud2021/1kolanko/.Xilinx/Vivado/2023.1/
+Vivado layouts directory: /home/stud2021/1kolanko/.Xilinx/Vivado/2023.1/data/layouts
+PlanAhead jar file: 	/local/home/cadmgr/xilinx/Vivado/2023.1/lib/classes/planAhead.jar
+Vivado log file: 	/home/stud2021/1kolanko/JOS/vivado.log
+Vivado journal file: 	/home/stud2021/1kolanko/JOS/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-45628-stud209-4
+Non-Default Parameters:	[]
+
+Xilinx & AMD Environment Variables
+--------------------------------------------------------------------------------------------
+RDI_APPROOT: /local/home/cadmgr/xilinx/Vivado/2023.1
+RDI_BASEROOT: /local/home/cadmgr/xilinx/Vivado
+RDI_BINROOT: /local/home/cadmgr/xilinx/Vivado/2023.1/bin
+RDI_BUILD: yes
+RDI_DATADIR: /local/home/cadmgr/xilinx/Vivado/2023.1/data
+RDI_INSTALLROOT: /local/home/cadmgr/xilinx
+RDI_INSTALLVER: 2023.1
+RDI_JAVA_PLATFORM: 
+RDI_JAVA_VERSION: 17.0.3_7
+RDI_LIBDIR: /local/home/cadmgr/xilinx/Vivado/2023.1/lib/lnx64.o/Ubuntu:/local/home/cadmgr/xilinx/Vivado/2023.1/lib/lnx64.o
+RDI_OPT_EXT: .o
+RDI_PATCHROOT: 
+RDI_PLATFORM: lnx64
+RDI_PREPEND_PATH: /local/home/cadmgr/xilinx/Vitis/2023.1/bin:/local/home/cadmgr/xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64
+RDI_PROG: /local/home/cadmgr/xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/vivado
+RDI_SESSION_INFO: /home/stud2021/1kolanko/JOS:stud209-4_1712318489_45587
+RDI_SHARED_DATA: /local/home/cadmgr/xilinx/SharedData/2023.1/data
+RDI_TPS_ROOT: /local/home/cadmgr/xilinx/Vivado/2023.1/tps/lnx64
+RDI_USE_JDK17: True
+SHELL: /bin/bash
+XILINX: /local/home/cadmgr/xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_DSP: /local/home/cadmgr/xilinx/Vivado/2023.1/ids_lite/ISE
+XILINX_HLS: /local/home/cadmgr/xilinx/Vitis_HLS/2023.1
+XILINX_PLANAHEAD: /local/home/cadmgr/xilinx/Vivado/2023.1
+XILINX_SDK: /local/home/cadmgr/xilinx/Vitis/2023.1
+XILINX_VITIS: /local/home/cadmgr/xilinx/Vitis/2023.1
+XILINX_VIVADO: /local/home/cadmgr/xilinx/Vivado/2023.1
+XILINX_VIVADO_HLS: /local/home/cadmgr/xilinx/Vivado/2023.1
+
+
+GUI allocated memory:	512 MB
+GUI max memory:		4,072 MB
+Engine allocated memory: 1,453 MB
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_HARDWARE_MANAGER, "Open Hardware Manager"); // u
+// Run Command: PAResourceCommand.PACommandNames_OPEN_HARDWARE_MANAGER
+// Tcl (Dont Echo) Command: 'rdi::info_commands get_hw_probes'
+// Tcl (Dont Echo) Command: 'load_features labtools'
+// TclEventType: LOAD_FEATURE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_hw_manager 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,537 MB. GUI used memory: 72 MB. Current time: 4/5/24, 2:01:43 PM CEST
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 77 MB (+78560kb) [00:00:13]
+// [Engine Memory]: 1,666 MB (+1595787kb) [00:00:13]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/local/home/cadmgr/xilinx/Vivado/2023.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 105 MB (+24993kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 111 MB (+759kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 122 MB (+5686kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [GUI Memory]: 133 MB (+5113kb) [00:00:14]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: HW_SESSION_OPEN
+// Tcl Message: open_hw_manager: Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 7740.867 ; gain = 335.410 ; free physical = 8308 ; free virtual = 14456 
+// 'K' command handler elapsed time: 9 seconds
+dismissDialog("Open Hardware Manager"); // bq
+// Elapsed time: 28 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_OPEN_TARGET, "Open target"); // g
+selectMenuItem(PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET, "Auto Connect"); // ao
+// Run Command: PAResourceCommand.PACommandNames_AUTO_CONNECT_TARGET
+// [GUI Memory]: 148 MB (+8609kb) [00:00:45]
+// Tcl Message: connect_hw_server -allow_non_jtag 
+// Tcl Message: INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121 INFO: [Labtools 27-2222] Launching hw_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:  ****** Xilinx hw_server v2023.1   **** Build date : May  7 2023 at 15:13:34     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:0 INFO: [Labtools 27-3417] Launching cs_server... 
+// TclEventType: HW_SERVER_UPDATE
+// Tcl Message: INFO: [Labtools 27-2221] Launch Output:   ******** Xilinx cs_server v2023.1.0   ****** Build date   : Apr 10 2023-17:59:24     **** Build number : 2023.1.1681142364       ** Copyright 2017-2022 Xilinx, Inc. All Rights Reserved.       ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.    
+// TclEventType: HW_TARGET_CHANGE
+// TclEventType: HW_TARGET_CLOSE
+// Tcl Message: open_hw_target 
+// Tcl Message: INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248AA5954 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,742 MB. GUI used memory: 75 MB. Current time: 4/5/24, 2:02:23 PM CEST
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_ADD
+// TclEventType: HW_TARGET_UPDATE
+// Tcl Message: current_hw_device [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0). 
+dismissDialog("Auto Connect"); // bq
+// [Engine Memory]: 1,757 MB (+8145kb) [00:00:50]
+// Elapsed time: 13 seconds
+selectButton(PAResourceOtoP.ProgramDebugTab_REFRESH_DEVICE, "Refresh device"); // g
+selectButton(PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, "Program device"); // g
+// Run Command: PAResourceCommand.PACommandNames_PROGRAM_FPGA
+selectButton(PAResourceOtoP.ProgramFpgaDialog_SPECIFY_BITSTREAM_FILE, (String) null); // r
+setFileChooser("/home/stud2021/1kolanko/JOS/lab3/ftdi/top.bit");
+selectButton(PAResourceOtoP.ProgramFpgaDialog_PROGRAM, "Program"); // a
+// TclEventType: HW_DEVICE_CHANGE
+dismissDialog("Program Device"); // aP
+// Tcl Message: set_property PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// Tcl Message: set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: set_property PROGRAM.FILE {/home/stud2021/1kolanko/JOS/lab3/ftdi/top.bit} [get_hw_devices xc7z020_1] 
+// Tcl Message: program_hw_devices [get_hw_devices xc7z020_1] 
+// TclEventType: HW_DEVICE_CHANGE
+// Tcl Message: INFO: [Labtools 27-3164] End of startup status: HIGH 
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_SYSMON_CHANGE
+// TclEventType: HW_DEVICE_UPDATE
+// TclEventType: HW_DEVICE_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: HW_DEVICE_PROBES_CHANGE
+// Tcl Message: refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0] 
+// Tcl Message: INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it. 
+// 'D' command handler elapsed time: 18 seconds
+dismissDialog("Program Device"); // bq
+// Elapsed time: 1021 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ao
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // ag
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, (String) null); // r
+setFolderChooser("/home/stud2021/1kolanko/JOS/lab3");
+// HMemoryUtils.trashcanNow. Engine heap size: 1,803 MB. GUI used memory: 77 MB. Current time: 4/5/24, 2:20:13 PM CEST
+// Elapsed time: 32 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "uart"); // Q
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // B
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, "Add Files..."); // ao
+dismissFileChooser();
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "top"); // Q
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bd
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+// Elapsed time: 13 seconds
+selectButton("NEXT", "Next >"); // JButton
+// Elapsed time: 14 seconds
+selectButton("NEXT", "Next >"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+selectButton("BACK", "< Back"); // JButton
+setText("PAResourceEtoH.FPGAChooser_FPGA_TABLE_SEARCH_FIELD", (String) null); // OverlayTextField
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // g
+// HMemoryUtils.trashcanNow. Engine heap size: 1,835 MB. GUI used memory: 80 MB. Current time: 4/5/24, 2:21:33 PM CEST
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "ZedB"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "ZedBoard Zynq Evaluation and Development Kit ; ZedBoard Zynq Evaluation and Development Kit ; ZedBoard Zynq Evaluation and Development Kit ; avnet.com ; 1.4 ; ZedBoard Zynq Evaluation and Development Kit ; 484 ; d ; 200 ; 53200 ; 106400 ; 140 ; 0 ; 220 ;  ; 32 ;  ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 4 ;  ;  ;  ;  ; 0 ;  ;  ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 0, "ZedBoard Zynq Evaluation and Development Kit", 0, false); // l
+openHTML ("http://avnet.me/zedboard");l
+// HOptionPane Error: 'Default HTML viewers not found in path (Open HTML)'
+selectButton("OptionPane.button", "OK"); // JButton
+selectButton("NEXT", "Next >"); // JButton
+// TclEventType: PROJECT_CLOSE
+// TclEventType: HW_OBJECT_DELETE
+// TclEventType: HW_SERVER_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,807 MB. GUI used memory: 78 MB. Current time: 4/5/24, 2:21:50 PM CEST
+// TclEventType: HW_SYSMON_DELETE
+// TclEventType: HW_TARGET_CLOSE
+// TclEventType: HW_TARGET_UPDATE
+// TclEventType: DEBUG_PROBE_DELETE
+selectButton("OptionPane.button", "Yes"); // JButton
+// Tcl Message: close_project 
+// Tcl Message: create_project uart /home/stud2021/1kolanko/JOS/lab3/uart -part xc7z020clg484-1 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,862 MB (+17442kb) [00:20:18]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/local/home/cadmgr/xilinx/Vivado/2023.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part avnet.com:zedboard:part0:1.4 [current_project] 
+// Tcl Command: 'file mkdir /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new'
+// Tcl Message: file mkdir /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new 
+// Tcl Message: close [ open /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv w ] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv 
+dismissDialog("New Project"); // f
+selectTableHeader(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk ; input ; false ; 0 ; 0", 0, "clk", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rst", 1, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 2, (String) null, 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "tx", 2, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 3, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rx ; input ; false ; 0 ; 0", 3, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "tx ; input ; false ; 0 ; 0", 2, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 2, "Direction", 1); // x
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 131 seconds
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // p
+// Elapsed Time for: 'L.f': 20s
+// HMemoryUtils.trashcanNow. Engine heap size: 1,906 MB. GUI used memory: 97 MB. Current time: 4/5/24, 2:22:13 PM CEST
+// Elapsed Time for: 'L.f': 22s
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.sv)]", 1, false); // E
+// Elapsed Time for: 'L.f': 24s
+// Elapsed Time for: 'L.f': 26s
+// [GUI Memory]: 160 MB (+5325kb) [00:20:45]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.sv)]", 1, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.sv)]", 1, false, false, false, false, false, true); // E - Double Click
+// [Engine Memory]: 1,962 MB (+7751kb) [00:20:56]
+selectCodeEditor("top.sv", 30, 357); // ad
+// HMemoryUtils.trashcanNow. Engine heap size: 1,983 MB. GUI used memory: 100 MB. Current time: 4/5/24, 2:22:33 PM CEST
+selectCodeEditor("top.sv", 68, 355); // ad
+selectCodeEditor("top.sv", 31, 355); // ad
+selectCodeEditor("top.sv", 29, 353); // ad
+selectCodeEditor("top.sv", 393, 329); // ad
+selectCodeEditor("top.sv", 335, 346); // ad
+selectCodeEditor("top.sv", 246, 347); // ad
+selectCodeEditor("top.sv", 29, 355); // ad
+selectCodeEditor("top.sv", 368, 326); // ad
+selectCodeEditor("top.sv", 371, 339); // ad
+selectCodeEditor("top.sv", 340, 354); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 169 MB (+854kb) [00:21:18]
+// Elapsed Time for: 'L.f': 01m:00s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,012 MB. GUI used memory: 96 MB. Current time: 4/5/24, 2:22:53 PM CEST
+selectCodeEditor("top.sv", 355, 335); // ad
+// Elapsed Time for: 'L.f': 01m:02s
+selectCodeEditor("top.sv", 49, 321); // ad
+selectCodeEditor("top.sv", 19, 292); // ad
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, IP Catalog]", 4, false); // f
+// Run Command: PAResourceCommand.PACommandNames_CORE_GEN
+setText("PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE_SEARCH_FIELD", "uart"); // OverlayTextField
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_uartlite:2.0", 5, "AXI Uartlite", 0, false); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_uartlite:2.0", 5, "AXI Uartlite", 0, false); // z
+expandTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_uartlite:2.0", 5); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_uartlite:2.0", 5, "AXI Uartlite", 0, false, false, false, false, false, true); // z - Double Click
+// Run Command: PAResourceCommand.PACommandNames_CUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_uartlite:2.0", 5, "AXI Uartlite", 0, false); // z
+selectTreeTable(PAResourceAtoD.CoreTreeTablePanel_CORE_TREE_TABLE, "AXI Uartlite ; AXI4 ; Production ; Included ; xilinx.com:ip:axi_uartlite:2.0", 5, "AXI Uartlite", 0, false, false, false, false, false, true); // z - Double Click
+// HOptionPane Warning: 'A background task is running. Please wait until it completes and try again. (Background Task)'
+// Elapsed time: 12 seconds
+selectComboBox("Baud Rate (C_BAUDRATE)", "230400", 11); // D
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: CREATE_IP_CORE
+dismissDialog("Customize IP"); // m
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: create_ip -name axi_uartlite -vendor xilinx.com -library ip -version 2.0 -module_name axi_uartlite_0 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILESET_UPDATE_IP
+// Tcl Message: set_property CONFIG.C_BAUDRATE {230400} [get_ips axi_uartlite_0] 
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target {instantiation_template} [get_files /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Instantiation Template' target for IP 'axi_uartlite_0'... 
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:54s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,053 MB. GUI used memory: 103 MB. Current time: 4/5/24, 2:23:48 PM CEST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 01m:56s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 01m:58s
+// Elapsed Time for: 'L.f': 02m:00s
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, axi_uartlite_0.xci]", 0, true, false, false, false, true, false); // W.c - Popup Trigger - Node
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, axi_uartlite_0.xci]", 0, true); // W.c - Node
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, axi_uartlite_0.xci]", 0, true); // W.c - Node
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, axi_uartlite_0.xci]", 0, true, false, false, false, false, true); // W.c - Double Click - Node
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, axi_uartlite_0.xci]", 0, true); // W.c - Node
+selectTree(PAResourceQtoS.SimpleOutputProductDialog_OUTPUT_PRODUCT_TREE, "[root, axi_uartlite_0.xci]", 0, true, false, false, false, false, true); // W.c - Double Click - Node
+// Elapsed time: 12 seconds
+selectButton(PAResourceQtoS.SimpleOutputProductDialog_GENERATE_OUTPUT_PRODUCTS_IMMEDIATELY, "Generate"); // a
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: generate_target all [get_files  /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci] 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'axi_uartlite_0'... 
+// Tcl Message: INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'axi_uartlite_0'... INFO: [IP_Flow 19-1686] Generating 'Implementation' target for IP 'axi_uartlite_0'... INFO: [IP_Flow 19-1686] Generating 'Change Log' target for IP 'axi_uartlite_0'... 
+// Tcl Message: catch { config_ip_cache -export [get_ips -all axi_uartlite_0] } 
+// Tcl Message: INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: axi_uartlite_0 
+// Tcl Message: export_ip_user_files -of_objects [get_files /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci] -no_script -sync -force -quiet 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [Vivado 12-23855] The given sub-design is auto disabled, no action will be taken: '/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci' 
+dismissDialog("Managing Output Products"); // bq
+// Elapsed Time for: 'L.f': 02m:18s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,072 MB. GUI used memory: 101 MB. Current time: 4/5/24, 2:24:13 PM CEST
+// [Engine Memory]: 2,072 MB (+11955kb) [00:22:47]
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_uartlite_0 (axi_uartlite_0.xci)]", 2); // E
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // u
+// Elapsed Time for: 'L.f': 02m:36s
+// Elapsed Time for: 'L.f': 02m:40s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,096 MB. GUI used memory: 101 MB. Current time: 4/5/24, 2:24:33 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd)]", 2, true); // E - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd)]", 2); // E
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd)]", 2); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 6); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 7); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, axi_uartlite_0 (axi_uartlite_0.xci)]", 9); // E
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // u
+// Elapsed Time for: 'L.f': 02m:54s
+// Elapsed Time for: 'L.f': 02m:56s
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd)]", 9); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd), U0 : axi_uartlite(RTL) (axi_uartlite_v2_0_vh_rfs.vhd)]", 10); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd)]", 9, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, axi_uartlite_0 (axi_uartlite_0.xci), axi_uartlite_0(axi_uartlite_0_arch) (axi_uartlite_0.vhd)]", 9, true, false, false, false, false, true); // E - Double Click - Node
+// HMemoryUtils.trashcanNow. Engine heap size: 2,127 MB. GUI used memory: 102 MB. Current time: 4/5/24, 2:24:58 PM CEST
+// Elapsed time: 14 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0]", 1); // E
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0, Instantiation Template]", 2); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0, Instantiation Template, axi_uartlite_0.vho]", 3, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0, Instantiation Template, axi_uartlite_0.vho]", 3, false, false, false, false, false, true); // E - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0, Instantiation Template, axi_uartlite_0.veo]", 4, false); // E
+// HMemoryUtils.trashcanNow. Engine heap size: 2,167 MB. GUI used memory: 102 MB. Current time: 4/5/24, 2:25:18 PM CEST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0, Instantiation Template, axi_uartlite_0.veo]", 4, false); // E
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, IP, axi_uartlite_0, Instantiation Template, axi_uartlite_0.veo]", 4, false, false, false, false, false, true); // E - Double Click
+// [Engine Memory]: 2,197 MB (+22522kb) [00:23:45]
+selectCodeEditor("axi_uartlite_0.veo", 54, 381); // G
+typeControlKey((HResource) null, "axi_uartlite_0.veo", 'c'); // G
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "IP Catalog", 2); // o
+closeView(PAResourceOtoP.PAViews_IP_CATALOG, "IP Catalog"); // H
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top.sv", 1); // o
+typeControlKey((HResource) null, "top.sv", 'v'); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:40s
+// Elapsed Time for: 'L.f': 03m:42s
+selectCodeEditor("top.sv", 154, 27); // ad
+selectCodeEditor("top.sv", 147, 30); // ad
+selectCodeEditor("top.sv", 147, 30, false, false, false, false, true); // ad - Double Click
+typeControlKey(null, null, 'z');
+selectCodeEditor("top.sv", 51, 76); // ad
+typeControlKey((HResource) null, "top.sv", 'v'); // ad
+selectCodeEditor("top.sv", 380, 80); // ad
+selectCodeEditor("top.sv", 373, 64); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:54s
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 03m:56s
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed Time for: 'L.f': 03m:58s
+// Elapsed Time for: 'L.f': 04m:00s
+selectCodeEditor("top.sv", 137, 144); // ad
+selectCodeEditor("top.sv", 137, 144, false, false, false, false, true); // ad - Double Click
+selectCodeEditor("top.sv", 138, 114); // ad
+selectCodeEditor("top.sv", 164, 66); // ad
+selectCodeEditor("top.sv", 164, 66, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "top.sv", 'c'); // ad
+selectCodeEditor("top.sv", 176, 124); // ad
+selectCodeEditor("top.sv", 176, 124, false, false, false, false, true); // ad - Double Click
+typeControlKey((HResource) null, "top.sv", 'v'); // ad
+selectCodeEditor("top.sv", 118, 123); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 2,230 MB. GUI used memory: 102 MB. Current time: 4/5/24, 2:26:18 PM CEST
+// Elapsed Time for: 'L.f': 04m:26s
+// Elapsed Time for: 'L.f': 04m:28s
+// Elapsed time: 10 seconds
+selectCodeEditor("top.sv", 447, 183); // ad
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'L.f': 04m:34s
+// Elapsed Time for: 'L.f': 04m:36s
+// HMemoryUtils.trashcanNow. Engine heap size: 2,246 MB. GUI used memory: 102 MB. Current time: 4/5/24, 2:26:33 PM CEST
+// Elapsed time: 47 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true); // E - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources]", 0, true, false, false, false, true, false); // E - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // al
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // al
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // ao
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "axi_master"); // Q
+selectComboBox(PAResourceAtoD.CreateSrcFileDialog_FILE_TYPE, "SystemVerilog", 2); // bd
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // m
+selectButton("FINISH", "Finish"); // JButton
+// 'f' command handler elapsed time: 15 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv 
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 0, (String) null, 0); // x
+// [GUI Memory]: 182 MB (+4850kb) [00:25:59]
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "clk", 0, "Port Name", 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rst", 1, "Port Name", 0); // x
+// Elapsed time: 28 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awadr", 2, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awadr ; input ; false ; 0 ; 0", 2, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awadr ; input ; true ; 0 ; 0", 2, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 3, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awadr", 2, "Port Name", 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awvld", 3, "Port Name", 0); // x
+// Elapsed time: 11 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awvld ; input ; false ; 0 ; 0", 3, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 3, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "awrdy ; input ; false ; 0 ; 0", 4, "input", 1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 4, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 5, (String) null, 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wdat", 5, "Port Name", 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld", 6, "Port Name", 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wrdy", 7, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wdat ; input ; false ; 0 ; 0", 5, "input", 1); // x
+// [GUI Memory]: 215 MB (+24301kb) [00:27:59]
+// Elapsed time: 22 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 5, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wdat ; output ; false ; 0 ; 0", 5, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wdat ; output ; true ; 0 ; 0", 5, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "31", 5, "MSB", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; input ; false ; 0 ; 0", 6, "input", 1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 6, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; false ; 0 ; 0", 6, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; false ; 0 ; 0", 6, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; false ; 0 ; 0", 6, "0", 3, false, false, false, false, true); // x - Double Click
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; false ; 0 ; 0", 6, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; false ; 0 ; 0", 6, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; true ; 0 ; 0", 6, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld ; output ; true ; 0 ; 0", 6, "true", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 8, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "wvld", 6, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 9, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bvld", 9, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bresp ; input ; false ; 0 ; 0", 8, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 8, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "brdy ; input ; false ; 0 ; 0", 10, "input", 1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 10, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bresp ; input ; false ; 0 ; 0", 8, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bresp ; input ; false ; 0 ; 0", 8, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bresp ; input ; false ; 0 ; 0", 8, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bresp ; input ; true ; 0 ; 0", 8, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 8, "MSB", 3); // x
+// Elapsed time: 12 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 11, (String) null, 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "bresp", 8, "Port Name", 0); // x
+// HMemoryUtils.trashcanNow. Engine heap size: 2,294 MB. GUI used memory: 264 MB. Current time: 4/5/24, 2:30:43 PM CEST
+// Elapsed time: 13 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "aradr ; input ; false ; 0 ; 0", 11, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 11, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "aradr ; output ; false ; 0 ; 0", 11, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "aradr ; output ; true ; 0 ; 0", 11, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "3", 11, "MSB", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 12, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "arvld ; input ; false ; 0 ; 0", 12, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 12, "Direction", 1); // x
+// [GUI Memory]: 314 MB (+92553kb) [00:29:36]
+// Elapsed time: 11 seconds
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "arvld ; input ; false ; 0 ; 0", 12, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 12, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "arrdy ; input ; false ; 0 ; 0", 13, "arrdy", 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "arrdy", 13, "Port Name", 0); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "arvld", 12, "Port Name", 0); // x
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // B
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "arrdy", 13, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 14, (String) null, 0); // x
+// HMemoryUtils.trashcanNow. Engine heap size: 2,370 MB. GUI used memory: 338 MB. Current time: 4/5/24, 2:31:33 PM CEST
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // B
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat", 14, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 15, (String) null, 0); // x
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // B
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rvld", 15, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 16, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; false ; 0 ; 0", 14, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 14, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; false ; 0 ; 0", 14, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; false ; 0 ; 0", 14, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; false ; 0 ; 0", 14, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; false ; 0 ; 0", 14, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; false ; 0 ; 0", 14, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rdat ; input ; true ; 0 ; 0", 14, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+// HMemoryUtils.trashcanNow. Engine heap size: 2,465 MB. GUI used memory: 384 MB. Current time: 4/5/24, 2:31:53 PM CEST
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "31", 14, "MSB", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rvld ; input ; false ; 0 ; 0", 15, "input", 1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 15, "Direction", 1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "input", 14, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rrdy ; input ; false ; 0 ; 0", 16, "input", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "output", 16, "Direction", 1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rrdy ; output ; false ; 0 ; 0", 16, "rrdy", 0); // x
+selectButton(RDIResource.AbstractCombinedPanel_ADD_ELEMENT, "Add Definition"); // B
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rrdy", 16, "Port Name", 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; input ; false ; 0 ; 0", 17, (String) null, 0); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rresp ; input ; false ; 0 ; 0", 17, "false", 2); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "rresp ; input ; true ; 0 ; 0", 17, "0", 3); // x
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, null, -1, null, -1); // x
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "1", 17, "MSB", 3); // x
+// HMemoryUtils.trashcanNow. Engine heap size: 2,533 MB. GUI used memory: 441 MB. Current time: 4/5/24, 2:32:18 PM CEST
+// Elapsed time: 11 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Define Module"); // p
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 466 MB (+142875kb) [00:30:54]
+// [Engine Memory]: 2,533 MB (+237171kb) [00:30:54]
+// Elapsed Time for: 'L.f': 10m:36s
+// [GUI Memory]: 518 MB (+30811kb) [00:30:56]
