@@ -12,7 +12,7 @@ brate = 230400
 #url  = 'ftdi://ftdi:232:AQ00RVQC/1'
 #UBUNTU at home
 #url = 'ftdi://ftdi:232:AQ00RVZA/1'
-url = 'ftdi://ftdi:232:AQ00RVZA/1'
+url = 'ftdi://ftdi:232:AQ00RVND/1'
 port = pyftdi.serialext.serial_for_url(url, baudrate=brate, bytesize=8, stopbits=1, parity='N', xonxoff=False, rtscts=False)
 
 # Send bytes
