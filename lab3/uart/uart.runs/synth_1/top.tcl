@@ -70,10 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param xicom.use_bs_reader 1
-set_param checkpoint.writeSynthRtdsInDcp 1
-set_param synth.incrementalSynthesisCache ./.Xil/Vivado-7091-stud209-4/incrSyn
-set_msg_config -id {Common 17-41} -limit 10000000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg484-1
 
@@ -93,6 +89,7 @@ OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
   /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv
+  /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv
   /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv
 }
 read_ip -quiet /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci

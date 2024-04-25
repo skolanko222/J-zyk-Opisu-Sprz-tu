@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Apr 12 13:52:54 2024
-# Process ID: 40099
+# Start of session at: Fri Apr 19 14:18:49 2024
+# Process ID: 110408
 # Current directory: /home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1
 # Command line: vivado -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: /home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/top.vds
@@ -12,7 +12,7 @@
 # Running On: stud209-4, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 6, Host memory: 16552 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1341.344 ; gain = 0.023 ; free physical = 7930 ; free virtual = 13724
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1341.340 ; gain = 0.023 ; free physical = 5329 ; free virtual = 14270
 Command: read_checkpoint -auto_incremental -incremental /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -25,76 +25,41 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 40176
-INFO: [Synth 8-11241] undeclared symbol 's_axi_awvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:18]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_awready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:19]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_wvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:23]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_wready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:24]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_bvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:27]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_bready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:28]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_arvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:31]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_arready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:32]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_rvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:36]
-INFO: [Synth 8-11241] undeclared symbol 's_axi_rready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:37]
+INFO: [Synth 8-7075] Helper process launched with PID 110461
+WARNING: [Synth 8-9661] initial value of parameter 'depth' is omitted [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv:2]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_awvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:21]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_awready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:22]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_wvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:26]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_wready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:27]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_bvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:30]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_bready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:31]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_arvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:34]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_arready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:35]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_rvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:39]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_rready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:40]
+INFO: [Synth 8-11241] undeclared symbol 'wr', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:52]
+INFO: [Synth 8-11241] undeclared symbol 'rd', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:52]
+INFO: [Synth 8-11241] undeclared symbol 'dout', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:52]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2045.738 ; gain = 378.801 ; free physical = 6979 ; free virtual = 12773
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2046.703 ; gain = 379.738 ; free physical = 4313 ; free virtual = 13294
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'top' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:5]
-INFO: [Synth 8-6157] synthesizing module 'axi_uartlite_0' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/.Xil/Vivado-40099-stud209-4/realtime/axi_uartlite_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uartlite_0' (0#1) [/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/.Xil/Vivado-40099-stud209-4/realtime/axi_uartlite_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uartlite_0' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/.Xil/Vivado-110408-stud209-4/realtime/axi_uartlite_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uartlite_0' (0#1) [/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/.Xil/Vivado-110408-stud209-4/realtime/axi_uartlite_0_stub.v:6]
 INFO: [Synth 8-6157] synthesizing module 'axi_master' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:23]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:44]
+	Parameter nbadr bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:49]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:96]
 INFO: [Synth 8-6155] done synthesizing module 'axi_master' (0#1) [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv:2]
+	Parameter depth bound to: 20 - type: integer 
+CRITICAL WARNING: [Synth 8-4445] could not open $readmem data file 'init_mem.mem'; please make sure the file is added to project and has read permission, ignoring [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv:2]
+WARNING: [Synth 8-689] width (1) of port connection 'data_out' does not match port width (8) of module 'ram' [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:55]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:5]
-WARNING: [Synth 8-3848] Net awvld in module/entity axi_master does not have driver. [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:24]
-WARNING: [Synth 8-3848] Net wdat in module/entity axi_master does not have driver. [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:25]
-WARNING: [Synth 8-3848] Net wvld in module/entity axi_master does not have driver. [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:25]
-WARNING: [Synth 8-3848] Net brdy in module/entity axi_master does not have driver. [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv:26]
-WARNING: [Synth 8-3848] Net s_axi_awaddr in module/entity top does not have driver. [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv:6]
-WARNING: [Synth 8-7129] Port awvld in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[31] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[30] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[29] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[28] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[27] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[26] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[25] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[24] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[23] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[22] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[21] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[20] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[19] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[18] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[17] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[16] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[15] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[14] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[13] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[12] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[11] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[10] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[9] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[8] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[7] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[6] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[5] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[4] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[3] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[2] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[1] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wdat[0] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port wvld in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port brdy in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awadr[3] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awadr[2] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awadr[1] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awadr[0] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port awrdy in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port wrdy in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port bresp[1] in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port bresp[0] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port bvld in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rdat[31] in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rdat[30] in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rdat[29] in module axi_master is either unconnected or has no load
@@ -119,26 +84,19 @@ WARNING: [Synth 8-7129] Port rdat[11] in module axi_master is either unconnected
 WARNING: [Synth 8-7129] Port rdat[10] in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rdat[9] in module axi_master is either unconnected or has no load
 WARNING: [Synth 8-7129] Port rdat[8] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[7] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[6] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[5] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[4] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[3] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[2] in module axi_master is either unconnected or has no load
-WARNING: [Synth 8-7129] Port rdat[1] in module axi_master is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2110.707 ; gain = 443.770 ; free physical = 6894 ; free virtual = 12689
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2112.672 ; gain = 445.707 ; free physical = 4212 ; free virtual = 13200
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2125.551 ; gain = 458.613 ; free physical = 6892 ; free virtual = 12687
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2127.516 ; gain = 460.551 ; free physical = 4208 ; free virtual = 13197
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2125.551 ; gain = 458.613 ; free physical = 6892 ; free virtual = 12687
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2127.516 ; gain = 460.551 ; free physical = 4208 ; free virtual = 13197
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2125.551 ; gain = 0.000 ; free physical = 6892 ; free virtual = 12687
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2127.516 ; gain = 0.000 ; free physical = 4208 ; free virtual = 13197
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -147,53 +105,68 @@ Parsing XDC File [/home/stud2021/1kolanko/JOS/lab3/uart/uart.gen/sources_1/ip/ax
 Finished Parsing XDC File [/home/stud2021/1kolanko/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0/axi_uartlite_0_in_context.xdc] for cell 'slave'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2237.293 ; gain = 0.000 ; free physical = 6878 ; free virtual = 12673
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.258 ; gain = 0.000 ; free physical = 4194 ; free virtual = 13201
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2237.293 ; gain = 0.000 ; free physical = 6878 ; free virtual = 12672
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.258 ; gain = 0.000 ; free physical = 4194 ; free virtual = 13201
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6878 ; free virtual = 12673
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4198 ; free virtual = 13196
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6878 ; free virtual = 12673
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4198 ; free virtual = 13196
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property KEEP_HIERARCHY = SOFT for slave. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6878 ; free virtual = 12673
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4198 ; free virtual = 13196
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'axi_master'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
-              ReadStatus |                              001 | 00000000000000000000000000000000
-              WaitStatus |                              010 | 00000000000000000000000000000001
-                    Read |                              100 | 00000000000000000000000000000010
+              ReadStatus |                              000 | 00000000000000000000000000000000
+              WaitStatus |                              001 | 00000000000000000000000000000001
+                    Read |                              010 | 00000000000000000000000000000010
+                WaitRead |                              011 | 00000000000000000000000000000011
+                 Command |                              100 | 00000000000000000000000000000100
+                   Write |                              101 | 00000000000000000000000000000101
+               WaitWrite |                              110 | 00000000000000000000000000000110
+                WaitResp |                              111 | 00000000000000000000000000000111
 ---------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'axi_master'
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'axi_master'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6874 ; free virtual = 12671
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4196 ; free virtual = 13192
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---RAMs : 
+	              160 Bit	(20 X 8 bit)          RAMs := 1     
 +---Muxes : 
-	   3 Input    3 Bit        Muxes := 1     
-	   2 Input    3 Bit        Muxes := 2     
-	   2 Input    1 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 9     
+	   2 Input    1 Bit        Muxes := 23    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -210,26 +183,56 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3936] Found unconnected internal register 'memory/data_out_reg' and it is trimmed from '8' to '1' bits. [/home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv:12]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6866 ; free virtual = 12665
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13177
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+----------------+-----------+----------------------+----------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------+-----------+----------------------+----------------+
+|top         | memory/mem_reg | Implied   | 32 x 8               | RAM16X1S x 16  | 
++------------+----------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6869 ; free virtual = 12668
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4183 ; free virtual = 13190
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6869 ; free virtual = 12668
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4183 ; free virtual = 13190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+----------------+-----------+----------------------+----------------+
+|Module Name | RTL Object     | Inference | Size (Depth x Width) | Primitives     | 
++------------+----------------+-----------+----------------------+----------------+
+|top         | memory/mem_reg | Implied   | 32 x 8               | RAM16X1S x 16  | 
++------------+----------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6869 ; free virtual = 12669
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4183 ; free virtual = 13190
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -247,37 +250,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12680
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12680
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12679
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12679
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12679
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12679
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -297,35 +300,43 @@ Report Cell Usage:
 |1     |axi_uartlite |     1|
 |2     |BUFG         |     1|
 |3     |LUT1         |     1|
-|4     |LUT2         |     1|
-|5     |LUT3         |     1|
-|6     |LUT4         |     2|
-|7     |FDCE         |     5|
-|8     |FDPE         |     1|
-|9     |IBUF         |     3|
-|10    |OBUF         |     1|
+|4     |LUT2         |     4|
+|5     |LUT3         |     7|
+|6     |LUT4         |     8|
+|7     |LUT5         |     7|
+|8     |LUT6         |    16|
+|9     |RAM16X1S     |     2|
+|10    |FDCE         |    23|
+|11    |FDPE         |     2|
+|12    |FDRE         |     1|
+|13    |IBUF         |     3|
+|14    |OBUF         |     1|
 +------+-------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12679
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2237.293 ; gain = 458.613 ; free physical = 6880 ; free virtual = 12679
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2237.293 ; gain = 570.355 ; free physical = 6880 ; free virtual = 12679
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2261.258 ; gain = 460.551 ; free physical = 4176 ; free virtual = 13198
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2261.258 ; gain = 594.293 ; free physical = 4176 ; free virtual = 13198
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2237.293 ; gain = 0.000 ; free physical = 6967 ; free virtual = 12766
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.258 ; gain = 0.000 ; free physical = 4455 ; free virtual = 13477
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2237.293 ; gain = 0.000 ; free physical = 7144 ; free virtual = 12944
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2261.258 ; gain = 0.000 ; free physical = 4454 ; free virtual = 13472
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 2 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 2 instances
 
-Synth Design complete | Checksum: 83b81e1f
+Synth Design complete | Checksum: 17571411
 INFO: [Common 17-83] Releasing license: Synthesis
-37 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
+45 Infos, 31 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:22 . Memory (MB): peak = 2237.293 ; gain = 895.949 ; free physical = 7144 ; free virtual = 12943
-INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1766.789; main = 1453.709; forked = 362.949
-INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3193.949; main = 2237.297; forked = 972.660
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:23 . Memory (MB): peak = 2261.258 ; gain = 919.918 ; free physical = 4454 ; free virtual = 13472
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1797.819; main = 1482.167; forked = 382.758
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3230.793; main = 2261.262; forked = 985.539
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
 INFO: [Common 17-1381] The checkpoint '/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/top.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Apr 12 13:53:27 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 19 14:19:23 2024...

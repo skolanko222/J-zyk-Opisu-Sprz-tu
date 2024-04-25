@@ -39,7 +39,8 @@ simple_receiver #(.fclk(fclk), .baudrate(brate), .nb(size), .deep(nr_rec)) odbio
 end
 
 initial begin
-    wait(uut.master.st == uut.master.Read);
+//    wait(uut.master.st == uut.master.Read);
+    wait(uut.addr == 5);
     #2000 $finish();
   end
 endmodule

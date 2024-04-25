@@ -43,8 +43,9 @@ Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\sla
 Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
 Compiling architecture rtl of entity axi_uartlite_v2_0_32.axi_uartlite [\axi_uartlite(c_family="zynq",c_...]
 Compiling architecture axi_uartlite_0_arch of entity xil_defaultlib.axi_uartlite_0 [axi_uartlite_0_default]
-Compiling module xil_defaultlib.axi_master
-Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.axi_master(nbadr=5)
+Compiling module xil_defaultlib.ram(depth=20)
+Compiling module xil_defaultlib.top_default
 Compiling module xil_defaultlib.simple_receiver(deep=11)
 Compiling module xil_defaultlib.simple_transmitter(deep=9,ratio=...
 Compiling module xil_defaultlib.tb

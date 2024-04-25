@@ -2,7 +2,7 @@
 
 
 
-module top #(parameter depth)( input clk,rst, output tx, input rx);
+module top #(parameter depth = 20)( input clk,rst, output tx, input rx);
     localparam nba = $clog2(depth);
  wire [3 : 0] s_axi_awaddr;
  wire [31 : 0] s_axi_wdata;
@@ -10,7 +10,7 @@ module top #(parameter depth)( input clk,rst, output tx, input rx);
  wire [1 : 0] s_axi_bresp;
  wire [3 : 0] s_axi_araddr;
  wire [31 : 0] s_axi_rdata;
- wire [7:0] din;
+ wire [7:0] din, dout;
  wire [nba-1:0] addr;
  
 axi_uartlite_0 slave (
@@ -26,7 +26,7 @@ axi_uartlite_0 slave (
   .s_axi_wvalid(s_axi_wvalid),    // input wire s_axi_wvalid
   .s_axi_wready(s_axi_wready),    // output wire s_axi_wready
   
-  .s_axi_bresp(s_axi_bresp),      // output wire [1 : 0] s_axi_bresp
+  .s_axi_bresp(s_axi_bresp),      // outpudoutt wire [1 : 0] s_axi_bresp
   .s_axi_bvalid(s_axi_bvalid),    // output wire s_axi_bvalid
   .s_axi_bready(s_axi_bready),    // input wire s_axi_bready
   
@@ -43,7 +43,7 @@ axi_uartlite_0 slave (
   .tx(tx)                        // output wire tx
 );
 
-axi_master master (.clk(clk), .rst(rst),
+axi_master #(.nbadr(nba)) master (.clk(clk), .rst(rst),
     .awadr(s_axi_awaddr), .awvld(s_axi_awvalid),  .awrdy(s_axi_awready),      //Aw
     .wdat(s_axi_wdata), .wvld(s_axi_wvalid), .wrdy(s_axi_wready),            //W
      .bresp(s_axi_bresp), .bvld(s_axi_bvalid), .brdy(s_axi_bready),         //B
@@ -51,7 +51,7 @@ axi_master master (.clk(clk), .rst(rst),
     .rdat(s_axi_rdata),.rvld(s_axi_rvalid),.rrdy(s_axi_rready) ,           //R
     .wr(wr), .rd(rd), .data_in(din),.data_out(dout), .addr(addr)
     );
-ram #(.deptp(depth)) memory (.clk(clk), .rd(rd), .wr(wr) 
-    data_in(din), .data_out(dout), .mem_addr(addr) );
+ram #(.depth(depth)) memory (.clk(clk), .rd(rd), .wr(wr),
+    .data_in(din), .data_out(dout), .mem_addr(addr) );
 endmodule
 

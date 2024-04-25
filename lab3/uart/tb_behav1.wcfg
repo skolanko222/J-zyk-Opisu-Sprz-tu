@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="423,946.177 ns"></ZoomStartTime>
+      <ZoomEndTime time="424,469.850 ns"></ZoomEndTime>
+      <Cursor1Time time="682,975.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="142"></NameColumnWidth>
+      <ValueColumnWidth column_width="93"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="22" />
+   <wvobject type="logic" fp_name="/tb/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/rst">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/strr">
+      <obj_property name="ElementShortName">strr</obj_property>
+      <obj_property name="ObjectShortName">strr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/strt">
+      <obj_property name="ElementShortName">strt</obj_property>
+      <obj_property name="ObjectShortName">strt</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/tx">
+      <obj_property name="ElementShortName">tx</obj_property>
+      <obj_property name="ObjectShortName">tx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/rx">
+      <obj_property name="ElementShortName">rx</obj_property>
+      <obj_property name="ObjectShortName">rx</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/finr">
+      <obj_property name="ElementShortName">finr</obj_property>
+      <obj_property name="ObjectShortName">finr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/fint">
+      <obj_property name="ElementShortName">fint</obj_property>
+      <obj_property name="ObjectShortName">fint</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/cmdm">
+      <obj_property name="ElementShortName">cmdm</obj_property>
+      <obj_property name="ObjectShortName">cmdm</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/incar">
+      <obj_property name="ElementShortName">incar</obj_property>
+      <obj_property name="ObjectShortName">incar</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/wr">
+      <obj_property name="ElementShortName">wr</obj_property>
+      <obj_property name="ObjectShortName">wr</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/rec_trn">
+      <obj_property name="ElementShortName">rec_trn</obj_property>
+      <obj_property name="ObjectShortName">rec_trn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/incat">
+      <obj_property name="ElementShortName">incat</obj_property>
+      <obj_property name="ObjectShortName">incat</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/rd">
+      <obj_property name="ElementShortName">rd</obj_property>
+      <obj_property name="ObjectShortName">rd</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/master/data_in">
+      <obj_property name="ElementShortName">data_in[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_in[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/memory/mem_addr">
+      <obj_property name="ElementShortName">mem_addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">mem_addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/master/maxd">
+      <obj_property name="ElementShortName">maxd[5:0]</obj_property>
+      <obj_property name="ObjectShortName">maxd[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/master/rdat">
+      <obj_property name="ElementShortName">rdat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rdat[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/master/st">
+      <obj_property name="ElementShortName">st[31:0]</obj_property>
+      <obj_property name="ObjectShortName">st[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb/uut/master/rvld">
+      <obj_property name="ElementShortName">rvld</obj_property>
+      <obj_property name="ObjectShortName">rvld</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/master/wdat">
+      <obj_property name="ElementShortName">wdat[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wdat[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb/uut/master/data_out">
+      <obj_property name="ElementShortName">data_out[7:0]</obj_property>
+      <obj_property name="ObjectShortName">data_out[7:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>
