@@ -20,14 +20,24 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module shreg(input clk, input rst, input en, sin, output logic [7:0] leds, output status
+module shreg(input clk, input rst, input en, sin, output logic [7:0] leds, output empty, three
     );
     
 always @ (posedge clk, posedge rst)
     if(rst)
         leds <= {8'b0};
     else if(en)
-        leds <= {leds[6:0], leds[7] | sin}; // przypisanie nieblokujace
+        if(sin)
+             begin
+                if(leds[7]==0)
+                    leds = {1,  leds[7:1]};
+                else
+                    leds = {0, leds[7:1]}; 
+             end
+        else
+            leds <= 8'b11110000; // przypisanie nieblokujace
         
-assign status = (leds == 8'b0);
+        
+assign empty = (leds == 8'b0);
+assign three = (leds == 8'b10101000);
 endmodule

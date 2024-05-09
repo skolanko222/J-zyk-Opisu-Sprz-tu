@@ -20,7 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module automat(input clk, input rst, input en, input start, input status, output for_serial_in);
+module automat(input clk, input rst, input en, input start, input empty,input three,  output for_serial_in);
 
 typedef enum {idle, pulse} states;
 states st, nst;
@@ -33,8 +33,9 @@ always @(posedge clk, posedge rst)
 always @* begin
     nst = idle;
     case(st)
-        idle: nst = (start & status) ? pulse : idle;
-        pulse: nst = idle;
+        idle: nst = (start & empty) ? pulse : idle;
+        pulse: nst = (three) ? idle : pulse;
+        
     endcase
 end
 
