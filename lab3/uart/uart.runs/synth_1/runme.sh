@@ -7,10 +7,14 @@
 # Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 # 
 
+echo "This script was generated under a different operating system."
+echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
+exit
+
 if [ -z "$PATH" ]; then
-  PATH=/local/home/cadmgr/xilinx/Vitis/2023.1/bin:/local/home/cadmgr/xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64:/local/home/cadmgr/xilinx/Vivado/2023.1/bin
+  PATH=E:/Vivado/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2023.2/bin
 else
-  PATH=/local/home/cadmgr/xilinx/Vitis/2023.1/bin:/local/home/cadmgr/xilinx/Vivado/2023.1/ids_lite/ISE/bin/lin64:/local/home/cadmgr/xilinx/Vivado/2023.1/bin:$PATH
+  PATH=E:/Vivado/Vivado/2023.2/ids_lite/ISE/bin/nt64;E:/Vivado/Vivado/2023.2/ids_lite/ISE/lib/nt64:E:/Vivado/Vivado/2023.2/bin:$PATH
 fi
 export PATH
 
@@ -21,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1'
+HD_PWD='C:/Users/User/Documents/JOS/lab3/uart/uart.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

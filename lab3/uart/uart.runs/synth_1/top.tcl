@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "/home/stud2021/1kolanko/JOS/lab3/uart/uart.runs/synth_1/top.tcl"
+  variable script "C:/Users/User/Documents/JOS/lab3/uart/uart.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -77,25 +77,23 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir /home/stud2021/1kolanko/JOS/lab3/uart/uart.cache/wt [current_project]
-set_property parent.project_path /home/stud2021/1kolanko/JOS/lab3/uart/uart.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/User/Documents/JOS/lab3/uart/uart.cache/wt [current_project]
+set_property parent.project_path C:/Users/User/Documents/JOS/lab3/uart/uart.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {/home/stud2021/1kolanko/.Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store} [current_project]
-set_property board_part avnet.com:zedboard:part0:1.4 [current_project]
-set_property ip_output_repo /home/stud2021/1kolanko/JOS/lab3/uart/uart.cache/ip [current_project]
+set_property ip_output_repo c:/Users/User/Documents/JOS/lab3/uart/uart.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib -sv {
-  /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv
-  /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv
-  /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv
+  C:/Users/User/Documents/JOS/lab3/uart/uart.srcs/sources_1/new/axi_master.sv
+  C:/Users/User/Documents/JOS/lab3/uart/uart.srcs/sources_1/new/mem.sv
+  C:/Users/User/Documents/JOS/lab3/uart/uart.srcs/sources_1/new/top.sv
 }
-read_ip -quiet /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci
-set_property used_in_implementation false [get_files -all /home/stud2021/1kolanko/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc]
-set_property used_in_implementation false [get_files -all /home/stud2021/1kolanko/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/stud2021/1kolanko/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc]
+read_ip -quiet C:/Users/User/Documents/JOS/lab3/uart/uart.srcs/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xci
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0_board.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all c:/Users/User/Documents/JOS/lab3/uart/uart.gen/sources_1/ip/axi_uartlite_0/axi_uartlite_0.xdc]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -108,7 +106,7 @@ foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
 }
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/stud2021/1kolanko/JOS/lab3/uart/uart.srcs/utils_1/imports/synth_1/top.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/User/Documents/JOS/lab3/uart/uart.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
