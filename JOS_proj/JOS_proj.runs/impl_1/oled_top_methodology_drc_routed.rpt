@@ -1,0 +1,80 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Tue May 14 17:28:46 2024
+| Host         : stud209-4 running 64-bit Ubuntu 22.04.3 LTS
+| Command      : report_methodology -file oled_top_methodology_drc_routed.rpt -pb oled_top_methodology_drc_routed.pb -rpx oled_top_methodology_drc_routed.rpx
+| Design       : oled_top
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 9
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 9          |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on RST relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on rx relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An output delay is missing on DC relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An output delay is missing on RES relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An output delay is missing on SCLK relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An output delay is missing on SDIN relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An output delay is missing on VBAT relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An output delay is missing on VDD relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An output delay is missing on tx relative to the rising and/or falling clock edge(s) of clk100MHz.
+Related violations: <none>
+
+

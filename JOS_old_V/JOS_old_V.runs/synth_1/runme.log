@@ -1,0 +1,466 @@
+
+*** Running vivado
+    with args -log oled_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source oled_top.tcl
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source oled_top.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1340.371 ; gain = 0.023 ; free physical = 9980 ; free virtual = 14421
+Command: synth_design -top oled_top -part xc7z020clg484-1 -max_bram 2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-288] User specified maximum number of block RAM allowed in design is 2
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 12257
+INFO: [Synth 8-11241] undeclared symbol 'temp_spi_fin', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/OledInit.sv:30]
+INFO: [Synth 8-11241] undeclared symbol 'temp_delay_fin', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/OledInit.sv:33]
+INFO: [Synth 8-11241] undeclared symbol 'spi_en', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:25]
+INFO: [Synth 8-11241] undeclared symbol 'spi_fin', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:26]
+INFO: [Synth 8-11241] undeclared symbol 'delay_fin', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:32]
+INFO: [Synth 8-11241] undeclared symbol 'page_fin', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:35]
+INFO: [Synth 8-11241] undeclared symbol 'up_spi_en', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:35]
+INFO: [Synth 8-11241] undeclared symbol 'romen', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:37]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_awvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:23]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_awready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:24]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_wvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:28]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_wready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:29]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_bvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:32]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_bready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:33]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_arvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:36]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_arready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:37]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_rvalid', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:41]
+INFO: [Synth 8-11241] undeclared symbol 's_axi_rready', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:42]
+INFO: [Synth 8-11241] undeclared symbol 'wr', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:54]
+INFO: [Synth 8-11241] undeclared symbol 'rd', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:54]
+INFO: [Synth 8-11241] undeclared symbol 'last_bit', assumed default net type 'wire' [/home/stud2021/1kolanko/JOS/OLEDmy/src/SpiCtrl.v:83]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2042.703 ; gain = 376.801 ; free physical = 9010 ; free virtual = 13457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'oled_top' [/home/stud2021/1kolanko/JOS/OLEDmy/src/oled_top.v:17]
+INFO: [Synth 8-6157] synthesizing module 'OledInit' [/home/stud2021/1kolanko/JOS/OLEDmy/src/OledInit.sv:3]
+	Parameter modn bound to: 100000 - type: integer 
+	Parameter delvbat bound to: 100 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'SpiCtrl' [/home/stud2021/1kolanko/JOS/OLEDmy/src/SpiCtrl.v:19]
+INFO: [Synth 8-6155] done synthesizing module 'SpiCtrl' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/SpiCtrl.v:19]
+INFO: [Synth 8-6157] synthesizing module 'Delay' [/home/stud2021/1kolanko/JOS/OLEDmy/src/Delay.v:17]
+	Parameter moduloN bound to: 100000 - type: integer 
+	Parameter nbits bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/Delay.v:17]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/OledInit.sv:48]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/OledInit.sv:99]
+INFO: [Synth 8-6155] done synthesizing module 'OledInit' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/OledInit.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'fsm_oper' [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'Delay__parameterized0' [/home/stud2021/1kolanko/JOS/OLEDmy/src/Delay.v:17]
+	Parameter nbits bound to: 12 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'Delay__parameterized0' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/Delay.v:17]
+INFO: [Synth 8-6157] synthesizing module 'update_page' [/home/stud2021/1kolanko/JOS/OLEDmy/src/update_page.sv:3]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/update_page.sv:40]
+INFO: [Synth 8-6155] done synthesizing module 'update_page' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/update_page.sv:3]
+INFO: [Synth 8-6157] synthesizing module 'rom' [/home/stud2021/1kolanko/JOS/OLEDmy/src/rom.v:23]
+INFO: [Synth 8-3876] $readmem data file 'pixel_SSD1306.mem' is read successfully [/home/stud2021/1kolanko/JOS/OLEDmy/src/rom.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/rom.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:49]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:87]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:98]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:169]
+INFO: [Synth 8-6155] done synthesizing module 'fsm_oper' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/fsm_oper.sv:3]
+INFO: [Synth 8-226] default block is never used [/home/stud2021/1kolanko/JOS/OLEDmy/src/oled_top.v:88]
+INFO: [Synth 8-6157] synthesizing module 'top_uart' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:5]
+	Parameter depth bound to: 20 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axi_uartlite_0' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.runs/synth_1/.Xil/Vivado-12209-stud209-4/realtime/axi_uartlite_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uartlite_0' (0#1) [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.runs/synth_1/.Xil/Vivado-12209-stud209-4/realtime/axi_uartlite_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_master' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/axi_master.sv:23]
+	Parameter nbadr bound to: 5 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/axi_master.sv:53]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/axi_master.sv:100]
+INFO: [Synth 8-6155] done synthesizing module 'axi_master' (0#1) [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/axi_master.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'ram' [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/ram.sv:2]
+	Parameter depth bound to: 20 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'init_mem.mem' is read successfully [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/ram.sv:7]
+INFO: [Synth 8-6155] done synthesizing module 'ram' (0#1) [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/ram.sv:2]
+INFO: [Synth 8-6155] done synthesizing module 'top_uart' (0#1) [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/sources_1/new/top_uart.sv:5]
+INFO: [Synth 8-6155] done synthesizing module 'oled_top' (0#1) [/home/stud2021/1kolanko/JOS/OLEDmy/src/oled_top.v:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2119.641 ; gain = 453.738 ; free physical = 8909 ; free virtual = 13356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2134.484 ; gain = 468.582 ; free physical = 8909 ; free virtual = 13356
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2134.484 ; gain = 468.582 ; free physical = 8909 ; free virtual = 13356
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2134.484 ; gain = 0.000 ; free physical = 8908 ; free virtual = 13355
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.gen/sources_1/ip/axi_uartlite_0_1/axi_uartlite_0/axi_uartlite_0_in_context.xdc] for cell 'uart_top/slave'
+Finished Parsing XDC File [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.gen/sources_1/ip/axi_uartlite_0_1/axi_uartlite_0/axi_uartlite_0_in_context.xdc] for cell 'uart_top/slave'
+Parsing XDC File [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/constrs_1/new/timing.xdc]
+Finished Parsing XDC File [/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.srcs/constrs_1/new/timing.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.227 ; gain = 0.000 ; free physical = 8895 ; free virtual = 13333
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2266.227 ; gain = 0.000 ; free physical = 8895 ; free virtual = 13333
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8890 ; free virtual = 13329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8890 ; free virtual = 13329
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for uart_top/slave. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8890 ; free virtual = 13329
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'SpiCtrl'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Delay'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'OledInit'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'Delay__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'update_page'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'fsm_oper'
+INFO: [Synth 8-802] inferred FSM for state register 'st_reg' in module 'axi_master'
+INFO: [Synth 8-802] inferred FSM for state register 'current_state_reg' in module 'oled_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                             0001 |                               00
+                    Send |                             0010 |                               01
+                   Hold1 |                             0100 |                               10
+                    Done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'SpiCtrl'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                    Hold |                               01 |                               01
+                    Done |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Delay'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                         00000001 | 00000000000000000000000000000000
+                Decision |                         00000010 | 00000000000000000000000000000001
+                   Power |                         00000100 | 00000000000000000000000000000010
+                 WaitPre |                         00001000 | 00000000000000000000000000000011
+                   Delay |                         00010000 | 00000000000000000000000000000100
+                     Spi |                         00100000 | 00000000000000000000000000000110
+                   Clear |                         01000000 | 00000000000000000000000000000101
+                    Done |                         10000000 | 00000000000000000000000000000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'OledInit'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                               00 |                               00
+                    Hold |                               01 |                               01
+                    Done |                               10 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'sequential' in module 'Delay__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 | 00000000000000000000000000000000
+                 ClearDC |                              001 | 00000000000000000000000000000001
+                 SendCmd |                              010 | 00000000000000000000000000000010
+             Transition1 |                              011 | 00000000000000000000000000000100
+             Transition2 |                              100 | 00000000000000000000000000000101
+             Transition5 |                              101 | 00000000000000000000000000000110
+                   SetDC |                              110 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'update_page'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                      00000000001 | 00000000000000000000000000000000
+                  screen |                      00000000010 | 00000000000000000000000000000001
+                    page |                      00000000100 | 00000000000000000000000000000011
+                sendChar |                      00000001000 | 00000000000000000000000000000100
+                 readMem |                      00000010000 | 00000000000000000000000000000101
+                    spi1 |                      00000100000 | 00000000000000000000000000000110
+                    spi2 |                      00001000000 | 00000000000000000000000000000111
+                    back |                      00010000000 | 00000000000000000000000000001001
+                timeDisp |                      00100000000 | 00000000000000000000000000001000
+                    done |                      01000000000 | 00000000000000000000000000001010
+                pageInit |                      10000000000 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'one-hot' in module 'fsm_oper'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              ReadStatus |                              000 | 00000000000000000000000000000000
+              WaitStatus |                              001 | 00000000000000000000000000000001
+                    Read |                              010 | 00000000000000000000000000000010
+                WaitRead |                              011 | 00000000000000000000000000000011
+                 Command |                              100 | 00000000000000000000000000000100
+                   Write |                              101 | 00000000000000000000000000000101
+               WaitWrite |                              110 | 00000000000000000000000000000110
+                WaitResp |                              111 | 00000000000000000000000000000111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'st_reg' using encoding 'sequential' in module 'axi_master'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    Idle |                             0001 |                               00
+          OledInitialize |                             0010 |                               01
+             OledExample |                             0100 |                               10
+                    Done |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'current_state_reg' using encoding 'one-hot' in module 'oled_top'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8888 ; free virtual = 13328
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 4     
+	   2 Input    4 Bit       Adders := 3     
+	   2 Input    3 Bit       Adders := 3     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 72    
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 5     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 21    
++---RAMs : 
+	              160 Bit	(20 X 8 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input   12 Bit        Muxes := 2     
+	  11 Input   11 Bit        Muxes := 1     
+	   2 Input   11 Bit        Muxes := 9     
+	   2 Input    8 Bit        Muxes := 12    
+	   8 Input    8 Bit        Muxes := 1     
+	   4 Input    8 Bit        Muxes := 80    
+	   2 Input    7 Bit        Muxes := 1     
+	   4 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 9     
+	   2 Input    3 Bit        Muxes := 14    
+	   7 Input    3 Bit        Muxes := 1     
+	   8 Input    3 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 55    
+	   8 Input    1 Bit        Muxes := 1     
+	   5 Input    1 Bit        Muxes := 3     
+	   7 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13318
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++------------+--------------------+---------------+----------------+
+|Module Name | RTL Object         | Depth x Width | Implemented As | 
++------------+--------------------+---------------+----------------+
+|oled_top    | Operation/addr_reg | 1024x8        | Block RAM      | 
++------------+--------------------+---------------+----------------+
+
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|oled_top    | uart_top/memory/mem_reg | Implied   | 32 x 8               | RAM16X1S x 16  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13321
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+-------------------------+-----------+----------------------+----------------+
+|Module Name | RTL Object              | Inference | Size (Depth x Width) | Primitives     | 
++------------+-------------------------+-----------+----------------------+----------------+
+|oled_top    | uart_top/memory/mem_reg | Implied   | 32 x 8               | RAM16X1S x 16  | 
++------------+-------------------------+-----------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |axi_uartlite_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+-------------+------+
+|      |Cell         |Count |
++------+-------------+------+
+|1     |axi_uartlite |     1|
+|2     |BUFG         |     1|
+|3     |CARRY4       |    14|
+|4     |LUT1         |    18|
+|5     |LUT2         |    35|
+|6     |LUT3         |    57|
+|7     |LUT4         |    68|
+|8     |LUT5         |    46|
+|9     |LUT6         |   103|
+|10    |MUXF7        |     6|
+|11    |RAM16X1S     |    16|
+|12    |RAMB18E1     |     1|
+|13    |FDCE         |    75|
+|14    |FDPE         |     8|
+|15    |FDRE         |   137|
+|16    |FDSE         |     7|
+|17    |IBUF         |     3|
+|18    |OBUF         |     7|
++------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2266.227 ; gain = 468.582 ; free physical = 8872 ; free virtual = 13317
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2266.227 ; gain = 600.324 ; free physical = 8872 ; free virtual = 13317
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.227 ; gain = 0.000 ; free physical = 9163 ; free virtual = 13608
+INFO: [Netlist 29-17] Analyzing 37 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2266.227 ; gain = 0.000 ; free physical = 9163 ; free virtual = 13608
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 16 instances were transformed.
+  RAM16X1S => RAM32X1S (RAMS32): 16 instances
+
+Synth Design complete | Checksum: c7aff5e9
+INFO: [Common 17-83] Releasing license: Synthesis
+88 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:26 . Memory (MB): peak = 2266.227 ; gain = 925.855 ; free physical = 9163 ; free virtual = 13608
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1821.031; main = 1488.252; forked = 375.895
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3235.758; main = 2266.230; forked = 985.535
+INFO: [Common 17-1381] The checkpoint '/home/stud2021/1kolanko/JOS/JOS_old_V/JOS_old_V.runs/synth_1/oled_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file oled_top_utilization_synth.rpt -pb oled_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 16:08:19 2024...

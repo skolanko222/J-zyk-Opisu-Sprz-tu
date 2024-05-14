@@ -2,14 +2,16 @@
 //////////////////////////////////////////////////////////////////////////////////
 module fsm_oper #(parameter reg [11:0] del4s = 12'd4000, reg [11:0] del1s = 12'd1000) 
 	(input clk, rst, en,
-    output sdo, sclk, fin, output reg dc);
+    output sdo, sclk, fin, output reg dc, input [7:0] data_out);
 
-localparam nb_screens = 2'b11, // ilość scrennów
+localparam nb_screens = 1'b1, // ilość scrennów
 	nb_pages = 3'b100,  //
 	nb_letters = 5'b10000,
 	nb_columns = 4'b1000;
 
 reg [7:0] current_screen[0:3][0:15];
+
+reg [7:0] uart_screen[0:3][0:15];
 `include "screens.vh"
 reg [1:0] cnt_screen;
 reg [2:0] cnt_clm, cnt_page;
@@ -94,12 +96,12 @@ always @(posedge clk)   //, posedge rst)
 	if(rst)
 		current_screen <= clear_screen;
 	else if(st == screen)
-	   current_screen <= alphabet_screen;
-		/*case(cnt_screen)
+	   //current_screen <= alphabet_screen;
+		case(cnt_screen)
 			2'b00: current_screen <= alphabet_screen;
 			2'b01: current_screen <= clear_screen; 
 			2'b10: current_screen <= agh_screen;
-		endcase*/
+		endcase
 
 //screen counter
 always @(posedge clk, posedge rst)

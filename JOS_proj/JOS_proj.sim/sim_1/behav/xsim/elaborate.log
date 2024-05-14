@@ -1,0 +1,58 @@
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /local/home/cadmgr/xilinx/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot oled_top_behav xil_defaultlib.oled_top xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.SpiCtrl
+Compiling module xil_defaultlib.Delay(nbits=8)
+Compiling module xil_defaultlib.OledInit_default
+Compiling module xil_defaultlib.Delay_default
+Compiling module xil_defaultlib.update_page
+Compiling module xil_defaultlib.rom
+Compiling module xil_defaultlib.fsm_oper
+Compiling module unisims_ver.GND
+Compiling module unisims_ver.LUT6
+Compiling module unisims_ver.LUT4
+Compiling module unisims_ver.FDRE_default
+Compiling module unisims_ver.FDSE_default
+Compiling module unisims_ver.x_lut3_mux8
+Compiling module unisims_ver.LUT3
+Compiling module unisims_ver.x_lut2_mux4
+Compiling module unisims_ver.LUT2
+Compiling module unisims_ver.LUT5
+Compiling module xil_defaultlib.axi_uartlite_0_pselect_f
+Compiling module xil_defaultlib.axi_uartlite_0_pselect_f__parame...
+Compiling module xil_defaultlib.axi_uartlite_0_address_decoder
+Compiling module xil_defaultlib.axi_uartlite_0_slave_attachment
+Compiling module xil_defaultlib.axi_uartlite_0_axi_lite_ipif
+Compiling module xil_defaultlib.axi_uartlite_0_baudrate
+Compiling module xil_defaultlib.axi_uartlite_0_cdc_sync
+Compiling module unisims_ver.x_lut1_mux2
+Compiling module unisims_ver.LUT1(INIT=2'b01)
+Compiling module xil_defaultlib.axi_uartlite_0_cntr_incr_decr_ad...
+Compiling module unisims_ver.SRL16E_default
+Compiling module xil_defaultlib.axi_uartlite_0_dynshreg_f_3
+Compiling module xil_defaultlib.axi_uartlite_0_srl_fifo_rbu_f_1
+Compiling module xil_defaultlib.axi_uartlite_0_srl_fifo_f_0
+Compiling module xil_defaultlib.axi_uartlite_0_uartlite_rx
+Compiling module xil_defaultlib.axi_uartlite_0_cntr_incr_decr_ad...
+Compiling module unisims_ver.MUXF7
+Compiling module xil_defaultlib.axi_uartlite_0_dynshreg_f
+Compiling module xil_defaultlib.axi_uartlite_0_srl_fifo_rbu_f
+Compiling module xil_defaultlib.axi_uartlite_0_srl_fifo_f
+Compiling module xil_defaultlib.axi_uartlite_0_uartlite_tx
+Compiling module xil_defaultlib.axi_uartlite_0_uartlite_core
+Compiling module xil_defaultlib.axi_uartlite_0_axi_uartlite
+Compiling module xil_defaultlib.axi_uartlite_0
+Compiling module xil_defaultlib.axi_master(nbadr=5)
+Compiling module xil_defaultlib.ram_default
+Compiling module xil_defaultlib.top_uart_default
+Compiling module xil_defaultlib.oled_top
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot oled_top_behav
